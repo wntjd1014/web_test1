@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- overflow 되는 부분을 ...으로 나타내는 것이 ellipsis -->
+<html lang="en">
+<head>
+    <title>Ellipsis</title>
+    <style>
+        h1,p {
+            width: 300px;
+        }
+        .ellipsis {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Possimus, repellat rem harum cupiditate, aliquid minima esse pariatur nobis 
+        dolores facere modi, commodi officia quidem distinctio nesciunt voluptatum quae 
+        culpa expedita!</h1>
+    <p class="ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Aspernatur, quidem.</p>
+</body>
+</html>

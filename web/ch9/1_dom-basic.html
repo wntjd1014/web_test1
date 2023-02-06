@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- script가 지정하는 부분보다 앞에 있으면 작동 안됨 -->
+<!-- script 태그를 h1, h2 태그 아래에 삽입 -->
+<!-- 유지 보수가 어려우나 파일 용량이 커도 기다림이 발생하지 않음 -->
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+    <script>
+        // h1 태그의 배경 색상을 변경
+        document.querySelector('h1').style.backgroundColor = 'red';
+        
+        // h2 태그의 글자 색상을 변경
+        document.querySelector('h2').style.color = 'green';
+    </script>
+</body>
+</html>

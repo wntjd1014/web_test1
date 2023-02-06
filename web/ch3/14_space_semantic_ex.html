@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- div 태그를 사용해 웹 페이지의 레이아웃 구성 -->
+<html>
+
+    <head>
+        <title>HTML5 기본 프로젝트</title>
+    </head>
+
+    <style>
+        aside {float: right;}
+        fieldset {background-color: rgb(165, 228, 247);}
+        nav>ul>li:nth-child(2) {color: red;}
+        input[type="button"] {background: blue;}
+        input[type="button"]:hover {background: red;}
+        input[type="button"]:active {background: green;}
+        input[type="submit"] {color: red;}
+        /* aside>tr:nth-child(2)>input:hover {color: blue;}
+        aside>tr:nth-child(2)>input:active {color: purple;} */
+        fieldset:hover {background-color: black;}
+        fieldset:active {background-color: gray;}
+    </style>
+    <body>
+        <header><h1>HTML5 Example Preview</h1></header>
+        <h2>HTML</h2>
+        <nav>
+            <ul>
+                <li>HTML5
+                    <ul>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                    </ul>
+                </li>
+                <li>CSS3
+                    <ul>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                    </ul>
+                </li>
+                <li>JavaScript
+                    <ul>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                        <li><a href="#">데이터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <aside>
+            <tr>
+                <td><label for="search"></label></td>
+                <td><input type="search"></td>
+            </tr>
+            <tr><input type="submit" value="검색"></tr>
+            <tr><input type="button" value=""></tr>
+        </aside>
+        <section>
+            <article>
+                <h3>HTML5 개요와 활용</h3>
+                <div>2023년 01월 27일</div>
+            </article>
+            <article>
+                <h3>HTML5 응용과 실습</h3>
+                <div>2023년 01월 27일</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut quisquam alias eius eveniet quasi nostrum ipsa,
+                     libero animi unde iusto modi dicta tenetur neque impedit porro explicabo at commodi.</p> 
+            </article>
+            <img src="C:\Users\admin\web\Penguins.jpg" alt="펭귄" width="300" />
+            <br />
+            <p>Proin ut Fringilla sapien.</p>
+        </section>
+        <fieldset>
+                <h3>카테고리</h3>
+                <ul>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                </ul>
+                <h3>최근 글</h3>
+                <ul>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                    <li><a href="#">데이터</a></li>
+                </ul>
+        </fieldset>
+        <br />
+        <footer>
+            <a href="#">Created By Team-HeXagon</address>
+        </footer>
+    </body>
+</html>

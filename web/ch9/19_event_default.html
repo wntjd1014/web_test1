@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- return 값에 false를 주면 안 뜸 -->
+<html lang="en">
+<head>
+    <title>Traditional Event - Default Event</title>
+    <script>
+        window.onload = function() {
+            var button = document.getElementById('button');
+
+            button.onclick = function() {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <a id="button" href="http://naver.com">버튼</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 후손 선택자와 자손 선택자는 특정 태그의 후손과 자손을 선택할 때 사용 -->
+<!-- 특정한 태그의 자손을 선택할 때 사용 : > -->
+<html lang="en">
+<head>
+    <title>CSS Selector Basic</title>
+    <style>
+        div#header .title {
+            color: red;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+        }
+        #header #nav {
+            color: blue;
+            box-sizing: content-box;
+            width: 130px;
+            height: 60px;
+            padding: 10px;
+            border: 5px solid black;
+            background-color: green;
+        }
+        div#section .title {color: green;}
+        div#section > p {color: rgb(180, 181, 201);}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="title">Loren insum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam, distinctio consectetur similique rem,
+            velit quisquam voluptates cupiditate dolorum earum alias sunt hic ipsam beatae voluptate fuga perferendis odio expedita quas.
+        </p>
+    </div>
+</body>
+</html>

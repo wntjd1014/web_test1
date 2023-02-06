@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 반드시 ; 찍어 줘야 된다 -->
+<html lang="en">
+<head>
+    <title>조건문</title>
+    <script>
+        // Date 객체를 선언 : 현재 시간 측정
+        var date = new Date();
+
+        // 요소 추출
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var day = date.getDay();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+
+        if (hours < 8) {
+            alert('자라')
+        }
+        else if (hours < 9) {
+            alert('출근')
+        }
+        else if (hours < 13) {
+            alert('아침수업')
+        }
+        else if (hours < 14) {
+            alert('점심')
+        }
+        else if (hours < 18) {
+            alert('오후수업')
+        }
+        else if (hours < 24) {
+            alert('쉬어')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

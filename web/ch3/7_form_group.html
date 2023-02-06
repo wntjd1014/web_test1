@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 연관있는 입력 양식 그룹으로 묶기 -->
+<!-- <fieldset> 요소는 하나의 그룹으로 묶은 요소를 주변으로 박스 모양의 선을 그려준다. -->
+<html lang="en">
+<head>
+    <title>Form Basic</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <table>
+                <h3>회원 가입</h3>
+                <tr>
+                    <td><label for="username">이름</label></td>
+                    <td><input id="username" type="text" name="username" minlength="2" maxlength="8"/>
+                </tr>
+                <tr>
+                    <td><label for="id">아이디</label></td>
+                    <td><input id="id" type="text" name="id" /></td>
+                </tr>
+                <tr>
+                    <td><label for="password">패스워드</label></td>
+                    <td><input type="password" name="password" minlength="8" />
+                </tr>
+                <tr>
+                    <td>성별</td>
+                        <select>
+                            <option>남자</option>
+                            <option>여자</option>
+                        </select>
+                </tr>
+                <input type="hidden" name="hidden" value="hidden" /><br />
+                <tr>
+                    <td><label for="tel">전화번호('-'제외)</label></td>
+                    <td><input type="tel" name="tel" value="" /></td><br />
+                </tr>
+                <tr>
+                    <td><label for="date">생년월일</label></td>
+                    <td><input type="date"></td><br />
+                </tr>
+                <tr>
+                    <td><label for="number">주민등록번호</label></td>
+                    <td><input type="number"></td>
+                    <td>-</td>
+                    <td><input type="password"></td><br />
+                </tr>
+                <tr>
+                    <td><label for="checkbox">약관 동의</label></td>
+                    <td><input type="checkbox"></td><br />
+                </tr>
+                <tr><input type="submit" value="가입" /></tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
