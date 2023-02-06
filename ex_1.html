@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeeJooseong</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .b {
+            /* border: solid 1px black; */
+            border: solid 1px rgba(125,125,125)
+        }
+    </style>
+    <!-- About -->
+    <style>
+      #About {
+        left: 50%;
+      }
+      ul {
+        list-style-type: none;
+      }
+    </style>
+    <!-- content -->
+    <style>
+      #git {
+        text-align: center;
+      }
+    </style>
+    <!-- contact -->
+    <style>
+      #contact {
+        text-align: left;
+      }
+      textarea {
+        width: 200px;
+      }
+    </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">Lee Jooseong</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>    
+        </ul>
+      </div>  
+  </nav>
+  <br><br><br><br>
+  <!-- About -->
+  <section class="page-section text-center" id="about">
+    <div class="container pr-x prx-lg-5">
+      <h2>About</h2>
+      <img class="img-fluid" src="jeju1.jpg" alt="증명사진">
+    </div>
+    <div class="info">
+      <h4 id="degree-title">Degree</h4>
+        <span id="degree">BA in Mathematics</span>
+      <h4 id="certi-title">Certificate</h4>
+        <ul id="certi">
+          <li id="certi-name">BigData Analyst</li>
+          <li id="certi-name">Information Processing Engineer</li>
+        </ul>
+      <h4 id="tech-title">Technique</h4>
+        <ul id="tech">
+          <li id="tech-name">Python</li>
+          <li id="tech-name">Oracle</li>
+          <li id="tech-name">HTML</li>
+        </ul>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="page-section text-center" id="portfolio">
+    <div id="git">
+      <h1 id="content-title">Portfolio</h1>
+      <span id="git_address"><a href="https://github.com/wntjd1014">Github</a></span>
+    </div>
+  </section>
+
+  <br/>
+  <!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="from-control" id="name" name="username">
+      </div>
+      <div class="form-group">
+        <label for="tel">Phone:</label>
+        <input type="tex" class="from-control" id="tel" name="phone-number">
+      </div>
+      <div class="form-group">
+        <label for="company">Company:</label>
+        <input type="text" class="from-control" id="company" name="company-name">
+      </div>
+      <div class="container">
+        <from action="/action_page.php">
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="from-control" rows="5" id="comment" name="comment"></textarea>
+          </div>
+        </from>
+      </div>
+      <form action="/action_page.php">
+        <div class="form-check-inline">
+          <label class="from-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="option1"
+            value="something" checked>입사 제안
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="from-check-label" for="check2">
+            <input type="checkbox" class="form-check-input" id="check2" name="option2"
+            value="something" checked>관심
+          </label>
+        </div>
+      </form>
+      <div class="form-group">
+        <p>관련 자료가 있다면 첨부하세요.</p>
+        <input type="file" class="form-control-file border" name="file">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </section>
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
